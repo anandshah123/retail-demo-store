@@ -9,6 +9,8 @@
       <SupportLink class="support"></SupportLink>
       <NavSeparator class="sep-2 mx-2"></NavSeparator>
       <CartLink class="cart"></CartLink>
+      <NavSeparator class="sep-2 mx-2"></NavSeparator>
+      <BackofficeLink class="backoffice"></BackofficeLink>
     </div>
   </nav>
 </template>
@@ -21,6 +23,7 @@ import SupportLink from './SupportLink/SupportLink.vue';
 import NavSeparator from './NavSeparator/NavSeparator.vue';
 import CartLink from './CartLink/CartLink.vue';
 import UserDropdown from './UserDropdown/UserDropdown.vue';
+import BackofficeLink from "./BackofficeLink/BackofficeLink.vue";
 
 export default {
   name: 'Navigation',
@@ -32,6 +35,7 @@ export default {
     NavSeparator,
     CartLink,
     UserDropdown,
+    BackofficeLink,
   },
 };
 </script>
@@ -74,6 +78,11 @@ export default {
 
 .cart {
   grid-area: Cart;
+  justify-self: end;
+}
+
+.backoffice {
+  grid-area: BackOffice;
   justify-self: end;
 }
 
