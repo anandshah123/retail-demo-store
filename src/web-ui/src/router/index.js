@@ -192,6 +192,7 @@ const Orders = () => import('@/authenticated/Orders.vue')
 const Admin = () => import('@/authenticated/Admin.vue')
 const ShopperSelectPage = () => import('@/authenticated/ShopperSelectPage.vue')
 const RoomGenerator = () => import('@/public/RoomGenerator.vue')
+const BackOffice = () => import('@/public/BackOffice.vue')
 
 
 // Routes
@@ -226,6 +227,12 @@ const router = createRouter({
       path: '/roomgenerator',
       name: 'RoomGenerator',
       component: RoomGenerator,
+      meta: { requiresAuth: true}
+    },
+    {
+      path: '/backoffice',
+      name: 'BackOffice',
+      component: BackOffice,
       meta: { requiresAuth: true}
     },
     {
