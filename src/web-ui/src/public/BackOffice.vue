@@ -234,27 +234,5 @@ export default {
 </script>
 
 <style>
-.main-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.content-container {
-  flex: 1;
-  max-width: 1024px;
-}
-
-.relative-container {
-  position: relative;
-}
-
-.highlighted-bounding-box {
-  position: absolute;
-  opacity: 50%;
-  border: 5px solid white;
-  border-radius: 5px;
-  box-sizing: border-box;
-  pointer-events: none;
-}
 
 </style>
